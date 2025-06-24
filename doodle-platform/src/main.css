@@ -1,4 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: antiquewhite;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Georgia;
 }

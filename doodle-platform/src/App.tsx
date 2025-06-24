@@ -1,7 +1,11 @@
+import CanvasComponent from "./CanvasComponent"
 
 const App = () => {
   return (
-    <div>Hello from Melyn!</div>
+    <main>
+      <h1> Doodle Canvas</h1>
+      <CanvasComponent />
+    </main>
   )
 }
 
