@@ -1,7 +1,12 @@
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 
 const CanvasComponent = () => {
     const canvasRef = useRef(null);
+
+    useEffect(() => {
+        const canvas = canvasRef.current;
+    }, [])
+    
 
     return (<div style={{
         display: "flex",
