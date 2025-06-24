@@ -1,15 +1,19 @@
+import { useRef } from "react"
+
 const CanvasComponent = () => {
+    const canvasRef = useRef(null);
+
     return (<div style={{
         display: "flex",
         justifyContent: "center",
         padding: "20px"
     }}>
-        <canvas style={{ 
+        <canvas ref={canvasRef} id="doodleCanvas" style={{ 
             border: "2px solid", 
             borderRadius:"8px", 
             backgroundColor: "white", 
             width:"800px", 
-            height:"400px",
+            height:"450px",
             cursor: "crosshair"
             }}>
             
